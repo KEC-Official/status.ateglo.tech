@@ -108,25 +108,25 @@ function templatizeString(text, parameters) {
 
 function getStatusText(color) {
   return color == "nodata"
-    ? "No Data Available"
+    ? "Mevcut Veri Yok"
     : color == "success"
-    ? "Fully Operational"
+    ? "Kullanıma Hazır"
     : color == "failure"
-    ? "Major Outage"
+    ? "Kritik Kesinti"
     : color == "partial"
-    ? "Partial Outage"
+    ? "Kısmi Kesinti"
     : "Unknown";
 }
 
 function getStatusDescriptiveText(color) {
   return color == "nodata"
-    ? "No Data Available: Health check was not performed."
+    ? "Bugüne ait herhangi bir veri toplanamadı."
     : color == "success"
-    ? "No downtime recorded on this day."
+    ? "Bugün herhangi bir kesinti tespit edilmedi."
     : color == "failure"
-    ? "Major outages recorded on this day."
+    ? "Bugün kritik kesintiler tespit edildi."
     : color == "partial"
-    ? "Partial outages recorded on this day."
+    ? "Bugün kısmi kesintiler tespit edildi."
     : "Unknown";
 }
 
